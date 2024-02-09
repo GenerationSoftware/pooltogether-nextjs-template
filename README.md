@@ -1,4 +1,4 @@
-# PoolTogether Protocol NextJS Template
+# PoolTogether NextJS Template 🌊🏆
 
 This is a minimal template for a static [NextJS](https://nextjs.org/) app that interacts with the [PoolTogether](https://pooltogether.com/) protocol.
 
