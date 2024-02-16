@@ -1,7 +1,7 @@
-import { Navbar } from '@/components/Navbar'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import App from './app'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,8 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           inter.className
         )}
       >
-        <Navbar className='z-50' />
-        <main className='w-full flex flex-col gap-4 items-center px-4 py-8'>{children}</main>
+        <App>{children}</App>
       </body>
     </html>
   )

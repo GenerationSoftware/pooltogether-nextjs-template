@@ -8,10 +8,15 @@
     "start": "npx serve@latest out"
   },
   "dependencies": {
+    "@generationsoftware/hyperstructure-client-js": "^1.9.0",
+    "@generationsoftware/hyperstructure-react-hooks": "^1.13.0",
+    "@tanstack/react-query": "^5.20.5",
     "classnames": "^2.5.1",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "viem": "^2.7.9",
+    "wagmi": "2.5.6"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
