@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@generationsoftware/hyperstructure-client-js": "^1.9.0",
-    "@generationsoftware/hyperstructure-react-hooks": "^1.13.0",
+    "@generationsoftware/hyperstructure-react-hooks": "^1.14.0",
     "@tanstack/react-query": "^5.20.5",
     "classnames": "^2.5.1",
     "next": "14.1.0",
