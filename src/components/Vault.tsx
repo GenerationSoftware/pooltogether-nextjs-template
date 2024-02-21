@@ -1,17 +1,15 @@
+import { VaultInfo } from '@generationsoftware/hyperstructure-client-js'
 import { useVault } from '@generationsoftware/hyperstructure-react-hooks'
 import classNames from 'classnames'
-import { Address } from 'viem'
-import { PRIZE_POOL_INFO } from '@constants/config'
 
-interface VaultProps {
-  address: Address
+interface VaultProps extends VaultInfo {
   className?: string
 }
 
 export const Vault = (props: VaultProps) => {
-  const { address, className } = props
+  const { className, ...rest } = props
 
-  const vault = useVault({ chainId: PRIZE_POOL_INFO.chainId, address })
+  const vault = useVault({ ...rest })
 
   return (
     <span className={classNames('', className)}>
