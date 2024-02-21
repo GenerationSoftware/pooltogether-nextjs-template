@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.9.0
     version: 1.9.0(viem@2.7.9)
   '@generationsoftware/hyperstructure-react-hooks':
-    specifier: ^1.14.0
-    version: 1.14.0(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
+    specifier: ^1.14.1
+    version: 1.14.1(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
   '@rainbow-me/rainbowkit':
     specifier: ^2.0.0
     version: 2.0.0(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
@@ -2176,10 +2176,10 @@ packages:
       - debug
     dev: false
 
-  /@generationsoftware/hyperstructure-react-hooks@1.14.0(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6):
+  /@generationsoftware/hyperstructure-react-hooks@1.14.1(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6):
     resolution:
       {
-        integrity: sha512-u5NudW61QV52xk0Xkl5r4dgnwqDrjxThpKNgegSD3uuoJZnljwkCbe62YGKZvzhWA265PMp2t1aLdOoq+DPeMA==
+        integrity: sha512-YrR1RBft6GL52by3csCFXH7Ywa4uWajFzSnxjps8BlbLc5kYt93eTa0m0Fj30cvBQiAjc3BSch+WQxqc9zwWqw==
       }
     peerDependencies:
       '@tanstack/react-query': ^5.20.5
