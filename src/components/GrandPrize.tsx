@@ -1,5 +1,3 @@
-import { PRIZE_POOL_INFO } from '@/constants/config'
-import { useEthPriceInUsd } from '@/hooks/useEthPrice'
 import { getPrizePoolId } from '@generationsoftware/hyperstructure-client-js'
 import {
   useAllPrizeInfo,
@@ -10,6 +8,8 @@ import classNames from 'classnames'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { formatUnits } from 'viem'
+import { PRIZE_POOL_INFO } from '@constants/config'
+import { useEthPriceInUsd } from '@hooks/useEthPrice'
 import { Loading } from './Loading'
 
 interface GrandPrizeProps {

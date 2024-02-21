@@ -1,7 +1,7 @@
-import { PRIZE_POOL_INFO } from '@/constants/config'
 import { useVault } from '@generationsoftware/hyperstructure-react-hooks'
 import classNames from 'classnames'
 import { Address } from 'viem'
+import { PRIZE_POOL_INFO } from '@constants/config'
 
 interface VaultProps {
   address: Address

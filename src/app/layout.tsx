@@ -1,3 +1,4 @@
+import '@rainbow-me/rainbowkit/styles.css'
 import classNames from 'classnames'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'

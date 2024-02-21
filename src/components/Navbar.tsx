@@ -1,3 +1,4 @@
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 import classNames from 'classnames'
 import Image from 'next/image'
 
@@ -23,6 +24,11 @@ export const Navbar = (props: NavbarProps) => {
           width={133}
           height={52}
           priority={true}
+        />
+        <ConnectButton
+          showBalance={false}
+          chainStatus={{ smallScreen: 'icon', largeScreen: 'full' }}
+          accountStatus='full'
         />
       </div>
     </nav>

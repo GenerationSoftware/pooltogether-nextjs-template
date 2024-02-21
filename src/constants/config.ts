@@ -13,6 +13,7 @@ export const VAULT_ADDRESSES = [
   '0xe3b3a464ee575e8e25d2508918383b89c832f275'
 ] as const satisfies Lowercase<Address>[]
 
+// TODO: use RainbowKit's `getDefaultConfig` instead to edit wallet list + add walletconnect project ID
 export const WAGMI_CONFIG = createConfig({
   chains: [mainnet, optimism],
   transports: {
