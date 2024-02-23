@@ -10,9 +10,6 @@ export const getRainbowKitTheme = (): Theme => {
       connectButtonBackground: 'transparent',
       connectButtonText: '#F5F0FF'
     },
-    fonts: {
-      body: 'Grotesk'
-    },
     shadows: {
       connectButton: '0 0 0 transparent'
     }
