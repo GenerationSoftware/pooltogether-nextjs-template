@@ -17,8 +17,11 @@ export const Vault = (props: VaultProps) => {
   const vault = useVault({ ...rest })
 
   return (
-    <span className={classNames('flex flex-col gap-4', className)}>
+    <span
+      className={classNames('flex flex-col gap-4 px-4 py-6 bg-pt-purple-800 rounded-lg', className)}
+    >
       <VaultHeader vault={vault} />
+      <hr className='border-pt-purple-600' />
       <VaultUserBalance vault={vault} />
       <VaultBalance vault={vault} />
       <VaultDepositForm vault={vault} />

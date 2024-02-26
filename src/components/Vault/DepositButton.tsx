@@ -8,6 +8,7 @@ import {
 } from '@generationsoftware/hyperstructure-react-hooks'
 import classNames from 'classnames'
 import { Address } from 'viem'
+import { useAccount } from 'wagmi'
 
 interface VaultDepositButtonProps {
   vault: Vault
@@ -16,13 +17,14 @@ interface VaultDepositButtonProps {
 
 export const VaultDepositButton = (
   props: VaultDepositButtonProps & {
-    userAddress?: Address
     depositAmount: bigint
     disabled?: boolean
     onSuccess?: () => void
   }
 ) => {
-  const { vault, userAddress, depositAmount, disabled, onSuccess, className } = props
+  const { vault, depositAmount, disabled, onSuccess, className } = props
+
+  const { address: userAddress } = useAccount()
 
   const { data: token, refetch: refetchVaultBalance } = useVaultBalance(vault)
   const { refetch: refetchUserVaultBalance } = useUserVaultTokenBalance(
@@ -51,8 +53,8 @@ export const VaultDepositButton = (
     }
   })
 
-  // TODO: style
-  const buttonClassName = ''
+  const buttonClassName =
+    'px-2 py-0.5 bg-pt-teal-dark text-pt-purple-900 rounded select-none disabled:opacity-50 disabled:pointer-events-none'
 
   if (!depositAmount || !userAddress || !token || allowance === undefined) {
     return (

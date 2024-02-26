@@ -23,7 +23,7 @@ export const VaultHeader = (props: VaultHeaderProps) => {
         alt={`${vaultName} Logo`}
         width={24}
         height={24}
-        className='w-12'
+        className='w-8'
       />
       <span className='font-medium text-xl'>{vaultName ?? <Loading className='h-3' />}</span>
     </div>

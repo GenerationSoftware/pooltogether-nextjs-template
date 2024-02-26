@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <GrandPrize className='my-12' />
-      <div className='flex gap-8 items-center flex-wrap'>
+      <div className='flex gap-8 flex-wrap'>
         {isMounted &&
           VAULT_LIST.tokens.map((vault) => (
             <Vault key={`${vault.chainId}-${vault.address}`} {...vault} />

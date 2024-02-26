@@ -44,15 +44,14 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
     !!formTokenAmount && formState.isValid ? parseUnits(formTokenAmount, token.decimals) : 0n
   const errorMsg = formState.errors['tokenAmount']?.message
 
-  // TODO: style
   return (
-    <div className={classNames('flex flex-col', className)}>
+    <div className={classNames('flex flex-col gap-1', className)}>
       <div className='flex gap-1 items-center justify-between'>
         <span>Deposit {token.symbol}</span>
         {userBalance !== undefined ? (
           <button
             onClick={() => setValue('tokenAmount', formatTokenAmount(userBalance, token.decimals))}
-            className='text-sm'
+            className='text-sm text-pt-purple-100 hover:text-pt-purple-200'
           >
             Max ({formatTokenAmount(userBalance, token.decimals)} {token.symbol})
           </button>
@@ -74,21 +73,21 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
                 v.split('.')[1].length <= token.decimals ||
                 'Too many decimals',
               isNotGreaterThanBalance: (v) =>
-                !userBalance ||
+                userBalance === undefined ||
                 parseFloat(formatUnits(userBalance, token.decimals)) >= parseFloat(v) ||
                 `Not enough ${token.symbol} in wallet`
             }
           })}
-          className='grow'
+          className='grow px-2 py-0.5 bg-pt-purple-50 text-pt-purple-900 rounded-l'
         />
         <VaultDepositButton
           vault={vault}
-          userAddress={userAddress}
           depositAmount={depositAmount}
           onSuccess={() => resetField('tokenAmount')}
+          className='rounded-l-none'
         />
       </div>
-      {!!errorMsg && <span className='text-sm text-pt-warning-light'>{errorMsg}</span>}
+      <span className='h-4 text-xs text-pt-warning-light'>{errorMsg}</span>
     </div>
   )
 }
