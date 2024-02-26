@@ -26,7 +26,9 @@ export const VAULT_LIST = {
   ]
 } as const satisfies VaultList
 
-// TODO: use RainbowKit's `getDefaultConfig` instead to edit wallet list + add walletconnect project ID
+/**
+ * @dev to edit the wallet list or add a walletconnect project ID, use RainbowKit's `getDefaultConfig` instead of `createConfig`
+ */
 export const WAGMI_CONFIG = createConfig({
   chains: [mainnet, optimism],
   transports: {
