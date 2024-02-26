@@ -20,7 +20,3 @@ All commands are run from the root of the project, from a terminal:
 - [PoolTogether Governance Forum](https://gov.pooltogether.com/)
 - [G9's PoolTogether SDK](https://github.com/GenerationSoftware/pooltogether-client-monorepo/tree/main/packages/hyperstructure-client-js)
 - [G9's PoolTogether React Hooks](https://github.com/GenerationSoftware/pooltogether-client-monorepo/tree/main/packages/hyperstructure-react-hooks)
-
-## ⚡ Quick Deployment to Fleek
-
-TODO
