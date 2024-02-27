@@ -51,7 +51,7 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
         <span>Deposit {token.symbol}</span>
         {userBalance !== undefined ? (
           <button
-            onClick={() => setValue('tokenAmount', formatTokenAmount(userBalance, token.decimals))}
+            onClick={() => setValue('tokenAmount', formatUnits(userBalance, token.decimals))}
             className='text-sm text-pt-purple-100 hover:text-pt-purple-200'
           >
             Max ({formatTokenAmount(userBalance, token.decimals)} {token.symbol})
