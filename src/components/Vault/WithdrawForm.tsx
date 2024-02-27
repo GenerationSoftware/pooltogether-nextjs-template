@@ -71,7 +71,7 @@ export const VaultWithdrawForm = (props: VaultWithdrawFormProps) => {
               isNotGreaterThanBalance: (v) =>
                 userBalance === undefined ||
                 parseFloat(formatUnits(userBalance, token.decimals)) >= parseFloat(v) ||
-                `Not enough ${token.symbol} in wallet`
+                `Not enough ${token.symbol} in vault`
             }
           })}
           className='grow px-2 py-0.5 bg-pt-purple-50 text-pt-purple-900 rounded-l'
