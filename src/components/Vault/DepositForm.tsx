@@ -20,12 +20,13 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
 
   const { data: token } = useVaultTokenData(vault)
 
-  const { data: tokenWithAmount, isFetching: isFetchingUserBalance } = useTokenBalance(
-    vault.chainId,
-    userAddress as Address,
-    token?.address as Address,
-    { refetchOnWindowFocus: true }
-  )
+  const {
+    data: tokenWithAmount,
+    isFetching: isFetchingUserBalance,
+    refetch: refetchUserBalance
+  } = useTokenBalance(vault.chainId, userAddress as Address, token?.address as Address, {
+    refetchOnWindowFocus: true
+  })
 
   const userBalance = !isFetchingUserBalance ? tokenWithAmount?.amount : undefined
 
@@ -83,7 +84,10 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
         <VaultDepositButton
           vault={vault}
           depositAmount={depositAmount}
-          onSuccess={() => resetField('tokenAmount')}
+          onSuccess={() => {
+            resetField('tokenAmount')
+            refetchUserBalance()
+          }}
           className='rounded-l-none'
         />
       </div>
