@@ -17,7 +17,7 @@ export const VaultBalance = (props: VaultBalanceProps) => {
   const balance = !!token ? formatTokenAmount(token.amount, token.decimals) : undefined
 
   return (
-    <span className={classNames('flex gap-1 items-center', className)}>
+    <div className={classNames('flex gap-1 items-center', className)}>
       <span className='text-pt-purple-100'>Total Vault Assets:</span>
       {!!token ? (
         <span>
@@ -26,6 +26,6 @@ export const VaultBalance = (props: VaultBalanceProps) => {
       ) : (
         <Loading className='h-2' />
       )}
-    </span>
+    </div>
   )
 }

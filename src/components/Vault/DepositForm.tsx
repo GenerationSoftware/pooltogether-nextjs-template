@@ -36,7 +36,7 @@ export const VaultDepositForm = (props: VaultDepositFormProps) => {
 
   const formTokenAmount = watch('tokenAmount')
 
-  if (!token) {
+  if (!token || !userAddress) {
     return <></>
   }
 
