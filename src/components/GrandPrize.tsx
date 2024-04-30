@@ -58,8 +58,8 @@ const PrizeTokenAmount = (props: { amount?: number; className?: string }) => {
     <span className={classNames('flex gap-2 items-center', className)}>
       {amount !== undefined ? (
         <>
-          <Image src='poolToken.svg' alt='Prize Token' width={48} height={48} />{' '}
-          {amount.toLocaleString('en', { maximumFractionDigits: 0 })}
+          <Image src='ethLogo.svg' alt='Prize Token' width={28} height={28} />{' '}
+          {amount.toLocaleString('en', { maximumFractionDigits: 2 })}
         </>
       ) : (
         <Loading className='h-4' />

@@ -8,20 +8,20 @@ export const PRIZE_POOL_INFO = PRIZE_POOLS.find(
 
 export const VAULT_LIST = {
   name: 'PoolTogether Template App Vault List',
-  version: { major: 0, minor: 1, patch: 0 },
-  timestamp: '2024-02-21T00:32:35Z',
+  version: { major: 0, minor: 1, patch: 1 },
+  timestamp: '2024-04-30T15:33:47Z',
   tokens: [
     {
       chainId: NETWORK.optimism,
-      address: '0xf0b19f02c63d51b69563a2b675e0160e1c34397c',
+      address: '0x2998c1685E308661123F64B333767266035f5020',
       name: 'Prize WETH',
-      logoURI: 'pWETH.svg'
+      logoURI: 'przWETH.svg'
     },
     {
       chainId: NETWORK.optimism,
-      address: '0xe3b3a464ee575e8e25d2508918383b89c832f275',
-      name: 'Prize USDC.e',
-      logoURI: 'pUSDC.svg'
+      address: '0x03D3CE84279cB6F54f5e6074ff0F8319d830dafe',
+      name: 'Prize USDC',
+      logoURI: 'przUSDC.svg'
     }
   ]
 } as const satisfies VaultList

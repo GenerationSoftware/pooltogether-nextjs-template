@@ -1,6 +1,6 @@
 {
   "name": "pooltogether-nextjs-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,8 +8,8 @@
     "start": "npx serve@latest out"
   },
   "dependencies": {
-    "@generationsoftware/hyperstructure-client-js": "^1.9.0",
-    "@generationsoftware/hyperstructure-react-hooks": "^1.14.1",
+    "@generationsoftware/hyperstructure-client-js": "^1.12.2",
+    "@generationsoftware/hyperstructure-react-hooks": "^1.16.3",
     "@rainbow-me/rainbowkit": "^2.0.0",
     "@tanstack/react-query": "^5.20.5",
     "classnames": "^2.5.1",

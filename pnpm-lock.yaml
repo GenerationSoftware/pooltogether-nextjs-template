@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@generationsoftware/hyperstructure-client-js':
-    specifier: ^1.9.0
-    version: 1.9.0(viem@2.7.9)
+    specifier: ^1.12.2
+    version: 1.12.2(viem@2.7.9)
   '@generationsoftware/hyperstructure-react-hooks':
-    specifier: ^1.14.1
-    version: 1.14.1(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
+    specifier: ^1.16.3
+    version: 1.16.3(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
   '@rainbow-me/rainbowkit':
     specifier: ^2.0.0
     version: 2.0.0(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6)
@@ -2165,13 +2165,13 @@ packages:
       micro-ftch: 0.3.1
     dev: false
 
-  /@generationsoftware/hyperstructure-client-js@1.9.0(viem@2.7.9):
+  /@generationsoftware/hyperstructure-client-js@1.12.2(viem@2.7.9):
     resolution:
       {
-        integrity: sha512-OnT6KxpBVDv9D7T9iMviXSIJBHOHnm694H2RkbZguk6vqmysqNd3KutZXn9zEfdm3Z5LIpcQwWr7DrSPXQPGMg==
+        integrity: sha512-tp0TAU40uq9VruUNWatISp+mGFxreGNOr1YiEnHz6K23woo4S4QIew0Gnwal/yfyUaQ/hyIOCfHCwaZz/1LV0g==
       }
     peerDependencies:
-      viem: ^2.7.8
+      viem: ^2.7.9
     dependencies:
       axios: 1.6.7
       viem: 2.7.9(typescript@5.3.3)
@@ -2179,10 +2179,10 @@ packages:
       - debug
     dev: false
 
-  /@generationsoftware/hyperstructure-react-hooks@1.14.1(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6):
+  /@generationsoftware/hyperstructure-react-hooks@1.16.3(@tanstack/react-query@5.20.5)(jotai@1.13.1)(react-dom@18.2.0)(react@18.2.0)(viem@2.7.9)(wagmi@2.5.6):
     resolution:
       {
-        integrity: sha512-YrR1RBft6GL52by3csCFXH7Ywa4uWajFzSnxjps8BlbLc5kYt93eTa0m0Fj30cvBQiAjc3BSch+WQxqc9zwWqw==
+        integrity: sha512-wUQTG0lQ0dF9h5zJsWFUxsk9EQDRiNKhZazxqeMOK5xE9Jxe2Xj2XO+8KKon2TYgP96VOB1+lRtz4cTQRwd5Hg==
       }
     peerDependencies:
       '@tanstack/react-query': ^5.20.5
@@ -2192,7 +2192,7 @@ packages:
       viem: ^2.7.9
       wagmi: 2.5.6
     dependencies:
-      '@generationsoftware/hyperstructure-client-js': 1.9.0(viem@2.7.9)
+      '@generationsoftware/hyperstructure-client-js': 1.12.2(viem@2.7.9)
       '@tanstack/react-query': 5.20.5(react@18.2.0)
       jotai: 1.13.1(@babel/core@7.23.9)(react@18.2.0)
       react: 18.2.0
